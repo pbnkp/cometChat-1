@@ -18,7 +18,12 @@ sf_guard_signout:
 sf_guard_password:
   url:   /request_password
   param: { module: sfGuardAuth, action: password }
-  
+
+# hookbox rules
+create_channel:
+  url: /hookbox/create_channel
+  param: { module: hookbox, action: createChannel}
+    
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
