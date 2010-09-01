@@ -1,0 +1,7 @@
+body { font: 16px Helvetica, Arial, sans-serif; font-weight: bold; padding: 20px; background: #48A; }
+.box { border: 3px solid #EEE; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#history { height: 250px; width: 400px; background: #FFF; padding: 10px; overflow: auto;  margin: 0px auto 5px; }
+#msg { height: 26px; width: 414px; padding: 3px; margin: 0px auto; display: block; background: #5AF; }
+#msg:hover { background: #3CF;}
+#msg:focus { background: #5DF; border-color: #5AF;}
+#title {text-align:center;}
