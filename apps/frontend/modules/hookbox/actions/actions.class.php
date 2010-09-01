@@ -16,8 +16,8 @@ class hookboxActions extends sfActions
   */
 	public function executeConnect(sfWebRequest $request)
 	{
-		$username = "test";
-		return $this->renderText('[true, {"name":"'.$this->getUser()->getUsername().'"}]');
+		$username = $this->getUser()->getUsername();
+		return $this->renderText('[true, {"name":"'.$username.'"}]');
 	}
 	
 	/**
