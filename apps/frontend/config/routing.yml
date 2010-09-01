@@ -3,7 +3,7 @@
 
 # default rules
 homepage:
-  url:   /chat
+  url:   /
   param: { module: chat, action: index }
 
 # sfGuard rules
