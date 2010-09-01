@@ -3,7 +3,7 @@
 
 prod:
   .settings:
-    no_script_name:         true
+    no_script_name:         false
     logging_enabled:        false
 
 dev:
@@ -25,7 +25,7 @@ test:
 all:
   .settings:
     # Form security secret (CSRF protection)
-    csrf_secret:            faadd3e6b028e52d860b5e36853cbac7f77c9c76
+    csrf_secret:            9f9ca127182b22ddb351f36a361345eae3f04116
 
     # Output escaping settings
     escaping_strategy:      true
@@ -35,7 +35,7 @@ all:
     use_database:           true
     
     # Enable plugin modules
-    enabled_modules:      [default, sfGuardAuth]
+    enabled_modules:      [default, sfGuardGroup, sfGuardUser, sfGuardPermission, sfGuardAuth]
     
     # login and secure modules
     login_module:           sfGuardAuth
