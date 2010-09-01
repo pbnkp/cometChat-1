@@ -3,8 +3,8 @@
 
 # default rules
 homepage:
-  url:   /
-  param: { module: default, action: index }
+  url:   /chat
+  param: { module: chat, action: index }
 
 # sfGuard rules
 sf_guard_signin:
