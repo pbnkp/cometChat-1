@@ -53,7 +53,7 @@ class hookboxActions extends sfActions
 		$originator = "cometChat";
 		$payload = $this->getUser()->getUsername()." just joined the chat";
 		$payload = urlencode($payload);
-		$url = $base_url.'?secret='.$secret.'&channel_name='.$channel_name.'&originator='.$originator.'&payload="'.$paylod.'"';
+		$url = $base_url.'?secret='.$secret.'&channel_name='.$channel_name.'&originator='.$originator.'&payload="'.$payload.'"';
 		$result = @file_get_contents($url,0,null,null);
 		
 		return $this->renderText('[true, {}]');
