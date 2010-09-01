@@ -1,7 +1,7 @@
 cometChat
 =========
 
-Simple chat web application using symfony framework and hookbox comet server.
+Simple chat web application using symfony framework and hookbox comet server (http://hookbox.org).
 
 Installation
 ------------
