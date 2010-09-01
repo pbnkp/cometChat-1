@@ -47,6 +47,14 @@ class hookboxActions extends sfActions
   */
 	public function executeSubscribe(sfWebRequest $request)
 	{
+		$base_url = "http://127.0.0.1:8001/rest/publish";
+		$secret = "cometChat";
+		$channel_name = "chat";
+		$originator = "cometChat";
+		$payload = $this->getUser()->getUsername();." just joined the chat";
+		$url = $base_url.'?secret='.$secret.'&channel_name='.$channel_name.'&originator='.$originator.'&payload="'.$paylod.'"';
+		$result = @file_get_contents($url,0,null,null);
+		
 		return $this->renderText('[true, {}]');
 	}
 	
