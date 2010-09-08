@@ -1,0 +1,21 @@
+cometChat
+=========
+
+Simple chat web application using symfony framework and hookbox comet server (http://hookbox.org).
+
+Installation
+------------
+
+1) Create a database cometChat and user cometChat (password: cometChat), or modify config/databases.yml
+2) ./symfony propel:build-all
+3) ./symfony cc
+4) ./symfony guard:create-user admin admin
+5) ./symfony guard:promote admin
+6) Create more user like this or using the backend application
+7) hookbox --admin-password=secret -rest-secret cometChat (if you change the rest-secret you need to change it in the hookbox module)
+8) connect to http://server.com:8001/admin for hookbox admin panel
+9) connect to http://server.com and login to access the chat
+
+Credits
+-------
+http://github.com/mcarter/hookbox/tree/master/examples/php_simple_chat
